@@ -8,9 +8,20 @@ using System;
 public class NewBehaviourScript : MonoBehaviour
 {
     bool turn_X = true; // if false, it's player O's turn
-    int oldscore = 0; 
+    int oldscore = 0;
 
     // grid buttons
+    public Button btGrid1;
+    public Button btGrid2;
+    public Button btGrid3;
+    public Button btGrid4;
+    public Button btGrid5;
+    public Button btGrid6;
+    public Button btGrid7;
+    public Button btGrid8;
+    public Button btGrid9;
+
+    // grid text
     // text will be " ", 'X', or 'O'
     public Text btText1 = null;
     public Text btText2 = null;
@@ -28,6 +39,34 @@ public class NewBehaviourScript : MonoBehaviour
     public Text txtPlayerO = null; // player O's score
     public Text txtPlayerX = null; // player X's score
     public Text feedback = null; // this feedback will show the winner
+
+    // make all grids button not interactable
+    public void after_score()
+    {
+        btGrid1.interactable = false;
+        btGrid2.interactable = false;
+        btGrid3.interactable = false;
+        btGrid4.interactable = false;
+        btGrid5.interactable = false;
+        btGrid6.interactable = false;
+        btGrid7.interactable = false;
+        btGrid8.interactable = false;
+        btGrid9.interactable = false;
+    }
+
+    // make all grids button interactable
+    public void after_reset()
+    {
+        btGrid1.interactable = true;
+        btGrid2.interactable = true;
+        btGrid3.interactable = true;
+        btGrid4.interactable = true;
+        btGrid5.interactable = true;
+        btGrid6.interactable = true;
+        btGrid7.interactable = true;
+        btGrid8.interactable = true;
+        btGrid9.interactable = true;
+    }
 
     // Check if the player has scored.
     public void score(string player) 
@@ -53,6 +92,7 @@ public class NewBehaviourScript : MonoBehaviour
                 oldscore = int.Parse(txtPlayerO.text);
                 txtPlayerO.text = Convert.ToString(oldscore + 1);
             }
+            after_score();
         }
 
         // 2. second row
@@ -74,6 +114,7 @@ public class NewBehaviourScript : MonoBehaviour
                 oldscore = int.Parse(txtPlayerO.text);
                 txtPlayerO.text = Convert.ToString(oldscore + 1);
             }
+            after_score();
         }
 
         // 3. third row
@@ -95,6 +136,7 @@ public class NewBehaviourScript : MonoBehaviour
                 oldscore = int.Parse(txtPlayerO.text);
                 txtPlayerO.text = Convert.ToString(oldscore + 1);
             }
+            after_score();
         }
 
         // 4. first column 
@@ -116,6 +158,7 @@ public class NewBehaviourScript : MonoBehaviour
                 oldscore = int.Parse(txtPlayerO.text);
                 txtPlayerO.text = Convert.ToString(oldscore + 1);
             }
+            after_score();
         }
 
         // 5. second column 
@@ -137,6 +180,7 @@ public class NewBehaviourScript : MonoBehaviour
                 oldscore = int.Parse(txtPlayerO.text);
                 txtPlayerO.text = Convert.ToString(oldscore + 1);
             }
+            after_score();
         }
 
         // 6. third column
@@ -158,6 +202,7 @@ public class NewBehaviourScript : MonoBehaviour
                 oldscore = int.Parse(txtPlayerO.text);
                 txtPlayerO.text = Convert.ToString(oldscore + 1);
             }
+            after_score();
         }
 
         // 7. first diagonal
@@ -179,6 +224,7 @@ public class NewBehaviourScript : MonoBehaviour
                 oldscore = int.Parse(txtPlayerO.text);
                 txtPlayerO.text = Convert.ToString(oldscore + 1);
             }
+            after_score();
         }
 
         // 8. second diagonal
@@ -200,6 +246,7 @@ public class NewBehaviourScript : MonoBehaviour
                 oldscore = int.Parse(txtPlayerO.text);
                 txtPlayerO.text = Convert.ToString(oldscore + 1);
             }
+            after_score();
         }
     }
 
@@ -221,7 +268,7 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText1.enabled = false; // disable the button after it has been selected
+        btGrid1.interactable = false; // disable the button after it has been selected
     }
 
     // grid 2
@@ -240,7 +287,7 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText2.enabled = false; // disable the button after it has been selected
+        btGrid2.interactable = false; // disable the button after it has been selected
     }
 
     // grid 3
@@ -259,7 +306,7 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText3.enabled = false; // disable the button after it has been selected
+        btGrid3.interactable = false; // disable the button after it has been selected
     }
 
     // grid 4
@@ -278,7 +325,7 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText4.enabled = false; // disable the button after it has been selected
+        btGrid4.interactable = false; // disable the button after it has been selected
     }
 
     // grid 5 
@@ -297,7 +344,7 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText5.enabled = false; // disable the button after it has been selected
+        btGrid5.interactable = false; // disable the button after it has been selected
     }
 
     // grid 6
@@ -316,7 +363,7 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText6.enabled = false; // disable the button after it has been selected
+        btGrid6.interactable = false; // disable the button after it has been selected
     }
 
     // grid 7 
@@ -335,7 +382,7 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText7.enabled = false; // disable the button after it has been selected
+        btGrid7.interactable = false; // disable the button after it has been selected
     }
 
     // grid 8
@@ -354,7 +401,7 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText8.enabled = false; // disable the button after it has been selected
+        btGrid8.interactable = false; // disable the button after it has been selected
     }
 
     // grid 9
@@ -373,8 +420,43 @@ public class NewBehaviourScript : MonoBehaviour
             score("O"); // check if O scored
         }
 
-        btText9.enabled = false; // disable the button after it has been selected
+        btGrid9.interactable = false; // disable the button after it has been selected
     }
 
 
+    // reset the grids
+    public void btReset_Click()
+    {
+        // reset text in the 9 grids, then reset text color
+        btText1.text = "";
+        btText1.color = Color.black;
+        btText2.text = "";
+        btText2.color = Color.black;
+        btText3.text = "";
+        btText3.color = Color.black;
+        btText4.text = "";
+        btText4.color = Color.black;
+        btText5.text = "";
+        btText5.color = Color.black;
+        btText6.text = "";
+        btText6.color = Color.black;
+        btText7.text = "";
+        btText7.color = Color.black;
+        btText8.text = "";
+        btText8.color = Color.black;
+        btText9.text = "";
+        btText9.color = Color.black;
+
+        // make all button interactable
+        after_reset();
+    }
+
+    // start a new game, reset the score
+    public void btNewgame_Click()
+    {
+        btReset_Click(); // reset the grids
+        // reset the score
+        txtPlayerO.text = "0";
+        txtPlayerX.text = "0";
+    }
 }

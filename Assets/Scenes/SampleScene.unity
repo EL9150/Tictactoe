@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 44697600}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btReset_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &44697600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +422,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 133635056}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btNewgame_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &133635056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,7 +555,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 185949283}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText7_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &185949283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,7 +772,7 @@ GameObject:
   - component: {fileID: 421136390}
   - component: {fileID: 421136389}
   m_Layer: 5
-  m_Name: txtPlayerX
+  m_Name: txtX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1135,7 +1171,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 619573954}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText4_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &619573954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1437,7 +1485,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 799772504}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText6_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &799772504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1637,7 +1697,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 942400117}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText3_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &942400117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,7 +1830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1059019946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText1_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1059019946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2037,7 +2121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1175797637}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText8_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1175797637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2465,7 +2561,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1544127922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText2_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1544127922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2665,7 +2773,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1674735316}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText9_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1674735316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2763,6 +2883,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26155f6afd25f6d41a0f2d45463f1c2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  btGrid1: {fileID: 1059019945}
+  btGrid2: {fileID: 1544127921}
+  btGrid3: {fileID: 942400116}
+  btGrid4: {fileID: 619573953}
+  btGrid5: {fileID: 2110196426}
+  btGrid6: {fileID: 799772503}
+  btGrid7: {fileID: 185949282}
+  btGrid8: {fileID: 1175797636}
+  btGrid9: {fileID: 1674735315}
   btText1: {fileID: 1480592817}
   btText2: {fileID: 398128623}
   btText3: {fileID: 2105484897}
@@ -2774,7 +2903,7 @@ MonoBehaviour:
   btText9: {fileID: 454352802}
   btReset: {fileID: 1980678663}
   btNewgame: {fileID: 436912085}
-  txtPlayerO: {fileID: 2077950109}
+  txtPlayerO: {fileID: 766830497}
   txtPlayerX: {fileID: 2094563639}
   feedback: {fileID: 1914700721}
 --- !u!1 &1914700719
@@ -3026,7 +3155,7 @@ GameObject:
   - component: {fileID: 2077950110}
   - component: {fileID: 2077950109}
   m_Layer: 5
-  m_Name: txtPlayerO
+  m_Name: txtO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3333,7 +3462,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2110196427}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1770803807}
+        m_TargetAssemblyTypeName: NewBehaviourScript, Assembly-CSharp
+        m_MethodName: btText5_Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2110196427
 MonoBehaviour:
   m_ObjectHideFlags: 0
