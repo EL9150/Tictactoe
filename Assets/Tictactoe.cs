@@ -39,6 +39,7 @@ public class NewBehaviourScript : MonoBehaviour
     public Text txtPlayerO = null; // player O's score
     public Text txtPlayerX = null; // player X's score
     public Text feedback = null; // this feedback will show the winner
+    public Text txtTurn = null; // show whose turn it is
 
     // make all grids button not interactable
     public void after_score()
@@ -66,6 +67,20 @@ public class NewBehaviourScript : MonoBehaviour
         btGrid7.interactable = true;
         btGrid8.interactable = true;
         btGrid9.interactable = true;
+    }
+
+    // change to O's turn
+    public void O_turn()
+    {
+        turn_X = false;
+        txtTurn.text = "O's turn";
+    }
+
+    // change to X's turn
+    public void X_turn()
+    {
+        turn_X = true;
+        txtTurn.text = "X's turn";
     }
 
     // Check if the player has scored.
@@ -228,7 +243,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         // 8. second diagonal
-        else if (btText9.text == player && btText5.text == player && btText7.text == player)
+        else if (btText3.text == player && btText5.text == player && btText7.text == player)
         {
             // change the color of the grids that form a line
             btText3.color = Color.blue;
@@ -258,13 +273,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText1.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText1.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
@@ -277,13 +292,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText2.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText2.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
@@ -296,13 +311,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText3.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText3.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
@@ -315,13 +330,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText4.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText4.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
@@ -334,13 +349,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText5.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText5.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
@@ -353,13 +368,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText6.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText6.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
@@ -372,13 +387,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText7.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText7.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
@@ -391,13 +406,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText8.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText8.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
@@ -410,13 +425,13 @@ public class NewBehaviourScript : MonoBehaviour
         if (turn_X) // X's turn
         {
             btText9.text = "X";
-            turn_X = false; // the next turn is O's turn
+            O_turn(); // the next turn is O's turn
             score("X"); // check if X scored
         }
         else
         {
             btText9.text = "O";
-            turn_X = true; // the next turn is X's turn
+            X_turn(); // the next turn is X's turn
             score("O"); // check if O scored
         }
 
